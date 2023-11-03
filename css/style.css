@@ -82,6 +82,12 @@ body {
     display: inline-block;
 }
 
+@media only screen and (max-width: 700px) {
+    body .cursor {
+        display: 'none'
+    }
+}
+
 .cursor {
     width: 50px;
     height: 50px;
@@ -202,7 +208,7 @@ section.fade-out {
 }
 
 .main {
-    max-width: 1900px;
+    max-width: 1700px;
     margin: auto;
     transition: all 0.5s ease-in-out;
     position: relative;
@@ -1721,11 +1727,10 @@ span {
 .bottom-row {
     margin-top: -60px;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
 }
-
 
 .tech-stack-card {
     position: relative;
@@ -3552,6 +3557,11 @@ span {
         width: 93.5dvw;
     }
 
+    
+    .bottom-row {
+        width: 93.5dvw;
+    }
+
     .header-sci li {
         margin: 0 20px 100px 0;
     }
@@ -3644,9 +3654,29 @@ span {
             border-radius: 20px;
             background: var(--clr);                                                                                                                                        
         }
-        .bottom-row{
-            margin-right: 40px;
+        .accordion-wrapper h1 {
+            font-size: 18px;
         }
+    
+        .accordion-panel {
+            padding: 0.9rem;
+        }
+    
+        .accordion h2 {
+          font-size: 2.5vw;
+        }
+        .accordion-trigger::before,
+        .accordion-trigger::after {
+            margin-top: 5px;
+            width: 0.8em;
+            height: 1px;
+            margin-right: -10px;
+        }
+    
+        .accordion-content {
+            font-size: 10px;
+        }
+
     }
 
     @media(max-width:405px) {
@@ -3655,6 +3685,9 @@ span {
         }
         .about-img-box img {
             height: 340px;
+        }
+        .logo{
+            display: none;
         }
 
         .home-text h1,
@@ -3684,7 +3717,11 @@ span {
          .services-section-title-2 h2{
             font-size: 18px;
          }
-
+        
+          .logo{
+            height: auto;
+            width: 10%;
+          }
           
     }
 
@@ -3702,14 +3739,7 @@ span {
             width: 150%;
         }
 
-        .bottom-row{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-right: 160px;
-        }
+  
      
     }
 
@@ -3837,9 +3867,7 @@ span {
         .accordion-wrapper {
             margin-top: 90px;
         }
-        .bottom-row{
-            margin-right: 20px;
-        }
+     
 
         .glass-card {
             width: 80%;
