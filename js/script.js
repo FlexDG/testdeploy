@@ -316,7 +316,7 @@
         const inputFields = {
             to_name: nameInput.value,
             user_name: nameInput.value,
-            from_user_email: emailInput.value,
+            user_email: emailInput.value,
             user_subject: subjectInput.value,
             message: messageInput.value,
         }
