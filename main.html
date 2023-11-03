@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.2/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <title>Felix Rafael D. De Guzman</title>
+  <link rel="icon" type="image/x-icon" href="img/Flex-Small-Logo.png">
+</head>
+
+<body>
+
+  <!----page loader----->
+  <div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <!----background circles start----->
+  <div class="bg-circles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+    <div class="circle-5"></div>
+    <div class="circle-6"></div>
+
+  </div>
+  <div class="sec-circle"></div>
+  <div class="sec-circle-2"></div>
+
+  <div class="sec-circle-3"></div>
+  <!----background circles end----->
+  <!----overlay start----->
+  <div class="overlay">
+  </div>
+  <!----overlay end----->
+
+  <!----main section start----->
+
+  <div class="main">
+
+    <header class="header">
+      <div class="nav-logo-container">
+        <h2 class="nav-text">
+          <div class="logo-bounce"></div>
+          <span class="nav-span"><a href="#home" class="link-item">Flex.Dev</a></span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">home</a></li>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li><a href="#services" class="nav-item link-item">services</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">projects</a></li>
+                <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                <li><a href="#process" class="nav-item link-item"></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!----header section start----->
+    <section class="home-section align-items-center" id="home">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <div class="home-text-container">
+              <p>Hello, I'm</p>
+              <h1>Felix De Guzman</h1>
+              <h2>And I'm a <span class="multiple-text text-gradient"></span></h2>
+              <p class="home-text-body"><span class="partner">Expertise</span> meets approachability. I am your
+                dedicated <span class="partner">Creatives Specialist</span>,
+                delivering top-notch quality and unwavering dependability. And with a client-focused approach, I am
+                more than just your business associate, I am your <span class="partner">partner</span>.</p>
+              <div class="btn-container">
+                <a href="#about" class="btn link-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  more about me</a>
+                <a href="#about" class="btn link-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  selected works</a>
+              </div>
+            </div>
+          </div>
+          <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="glass-ball"></div>
+        </div>
+        <ul class="header-sci">
+          <li><a href="https://www.facebook.com/felix.dg.90" target="_blank" rel="noopener"><i
+                class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/Felixiiiiible" target="_blank" rel="noopener"><i
+                class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/felix-de-guzman/" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <div class="bg-pictures">
+          <div class="phone">
+            <img src="img/header-images/phone.png" alt="">
+          </div>
+          <div class="lappy">
+            <img src="img/header-images/lappy.png" alt="">
+          </div>
+          <div class="tea">
+            <img src="img/header-images/tea.png" alt="">
+          </div>
+        </div>
+    </section>
+
+    <!----home section end----->
+
+    <!----about section start----->
+    <section class="about-section sec-padding" id="about">
+
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-text="A little bit about me">A little bit about me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-left">
+            <div class="container-left">
+              <div id="cards5">
+                <div class="left">
+                  <div class="about-img-box">
+                    <img src="img/header-images/head-img-1-comp.png" alt="about img">
+                  </div>
+                  <div class="contact_wrap pb">
+                    <div class="title">
+                      Contact
+                    </div>
+                    <div class="contact">
+                      <ul>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+                            <div class="contact-text">0997 655 5864</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon "><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="contact-text">felix.dg.50@gmail.com</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+                            <div class="contact-text">linkedin.com/in/felix-de-guzman</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                            <div class="contact-text">https://github.com/FlexDG</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon"><i class="fas fa-map-signs" aria-hidden="true"></i></div>
+                            <div class="contact-text">Angeles City, Pampanga, Philippines</div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="pb">
+                    <div class="title">
+                      Graphic Softwares
+                    </div>
+                    <div class="graphic-softwares">
+                      <ul>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="graphic-text">
+                              <p>Ps</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="graphic-text">
+                              <p>Pr</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="graphic-text">
+                              <p>Lr</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="graphic-text">
+                              <p>Ae</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="graphic-text">
+                              <p>Xd</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li>
+                          <div class="li_wrap">
+                            <div class="icon">
+                              <p><i class="fab fa-figma"></i></p>
+                            </div>
+
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p class="about-description">Picture this: a recent college graduate with a thirst for
+              knowledge and a boundless passion for the art of web design and UI/UX. My journey began at Angeles
+              University Foundation, where I honed my skills, and my passion for design was ignited by a group project
+              that changed my perspective on general design, a task to create the
+              website layout for a do or die major project. This was my lightbulb moment. I realized the profound impact
+              of design in enhancing user experiences and making a difference in the real world. Proficient in Front-End
+              Development, I bring a solid eye for detail, combined with the creative flair of a decent multimedia
+              designer.
+              Whether it's crafting eye-catching websites or ensuring flawless
+              user experience, I always try to strive in providing quality service. I'm excited to embark on this
+              journey and would be honored to collaborate with you to create remarkable design solutions. Let's connect
+              to explore the endless possibilities. Reach out to me and together, we'll take the digital world by storm,
+              one pixel at a time.</p>
+
+            <div class="about-tabs">
+              <button type="button" class="tab-item active" data-target="#education">education</button>
+              <button type="button" class="tab-item" data-target="#experience">experience</button>
+            </div>
+
+            <!---education start-->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2019 - 2023</span>
+                  <h4>bachelor of science in information technology - <span>angeles university foundation</span></h4>
+                  <p>Graduated with latin honors.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2017 - 2018</span>
+                  <h4>Senior High School Diploma - <span>angeles university foundation integrated school</span></h4>
+                  <p>I just basically survived :3</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2007 - 2013</span>
+                  <h4>Junior High School Diploma - <span>Proverbsville School Inc.</span></h4>
+                  <p>With honors for a decent amount of semesters.</p>
+                </div>
+
+              </div>
+
+              <h3>Tech Stack</h3>
+            </div>
+            <!---education end-->
+
+            <!---experience start-->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2022 - Present</span>
+                  <h4>Creatives Freelancer - <span>Independent</span></h4>
+                  <p>Over the past year, I've embarked on a journey as an independent freelancer in web
+                    design, UI/UX, and graphic artistry. This experience has allowed me to hone my skills, collaborate
+                    with different clients, and relish the creative freedom that comes with freelancing. With every
+                    project, I've taken steps forward in my career, and I'm eager to continue exploring newer
+                    possibilities.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">January - May, 2023 </span>
+                  <h4>Software Developer Intern - <span>MVP Asia Pacific</span></h4>
+                  <p>Took basic, intermediate, and advanced level C# syntax courses provided by the project manager of
+                    the software development team. Also underwent multiple development cycles for various projects while
+                    collaborating on a daily basis with the software development team for progress assessment and
+                    received mentorship.
+                  </p>
+                </div>
+              </div>
+              <h3>Tech Stack</h3>
+
+
+            </div>
+            <!---experience end-->
+            <div class="tech-stack-container">
+
+              <div class="top-row">
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="img/css-icon.png" class="card-logo" alt="">
+                  </div>
+                  <img src="img/stylesheet-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Stylesheets</h3>
+                  </div>
+                </div>
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="/img/csharp-icon.png" class="card-logo-csharp" alt="">
+                  </div>
+                  <img src="img/net-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>.NET Framework</h3>
+                  </div>
+                </div>
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="/img/java-icon.png" class="card-logo-java" alt="">
+                  </div>
+                  <img src="img/gui-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Basic Java</h3>
+                  </div>
+                </div>
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="/img/python-logo.png" class="card-logo-csharp" alt="">
+                  </div>
+                  <img src="img/back-end-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Basic Python</h3>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="bottom-row">
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="/img/php-logo.png" class="card-logo-php" alt="">
+                  </div>
+                  <img src="img/php-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Basic PHP</h3>
+                  </div>
+                </div>
+
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="/img/native-js-log.png" class="card-logo-csharp" alt="">
+                  </div>
+                  <img src="img/js-web-icon.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Vanilla Javascript</h3>
+                  </div>
+                </div>
+
+
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="img/node-icon.png" class="card-logo-nodejs" alt="">
+                  </div>
+                  <img src="img/nodejs-logo.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>JS Environment</h3>
+                  </div>
+                </div>
+
+                <div class="tech-stack-card">
+                  <div class="tech-stack-circle">
+                    <img src="img/xamarin.png" class="card-logo-nodejs" alt="">
+                  </div>
+                  <img src="img/xamarin-mobile.png" alt="" class="hover-logo">
+                  <div class="hover-content">
+                    <h3>Xamarin</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-btn-container experience-wrapper">
+              <a href="resources/De Guzman, Felix-Resume.pdf" download="Felix-Resume.pdf" target="_blank" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>download cv</a>
+              <a href="#contact" class="btn link-item">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----about section end----->
+
+    <!----services section start----->
+
+    <section class="services-section sec-padding" id="services">
+
+      <div class="container">
+        <div class="row">
+          <div class="services-section-title">
+            <h2 data-text="My Services">My Services</h2>
+            <h3>
+              I create digital environments where efficiency, visual elegance, and practicality meet.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="services-card-container" id="cards7">
+            <div class="services-card">
+              <div class="card-content">
+                <h2>The Outline</h2>
+                <h4>Efficient Planning</h4>
+                <hr>
+                <p> We'll carefully organize your thoughts and objectives into a well-defined outline, ensuring that we
+                  both have a clear and shared understanding of the plan.</p>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="card-content">
+                <h2>The Process</h2>
+                <h4>Development Cycle</h4>
+                <hr>
+                <p>
+                  We'll use the project outline to guide us in selecting the best tools for your project, setting the
+                  stage for a successful development process with the help of a 5 step phase.</p>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="card-content">
+                <h2>The End Result</h2>
+                <h4>Deployment and Maintenance</h4>
+                <hr>
+                <p>
+                  After all the necessary preparations are finished, we'll kick off the project launch and offer
+                  continuous maintenance support as needed.</p>
+              </div>
+            </div>
+            <div class="services-btn-container">
+              <a href="#process" class="btn link-item">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                view process</a>
+            </div>
+          </div>
+          <div class="services-section-title-2 reveal-2">
+            <h2 data-text="Your friendly front-end junior">Your friendly front-end junior</h2>
+          </div>
+          <div class="accordion-wrapper reveal-2">
+            <h1><i class="fa-solid fa-circle"></i>What I Do</h1>
+            <div class="accordion">
+              <div class="accordion-panel">
+                <h2 id="panel1-title">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="accordion1-content">
+                    Design from a developer's perspective...
+                  </button>
+                </h2>
+                <div class="accordion-content" role="region" aria-labelledby="panel1-title" aria-hidden="true"
+                  id="panel1-content">
+                  <div>
+                    <p>...according to your aesthetic. One unique advantage of that I have is that I am also a
+                      developer. This combined perspective not only speeds up work but ensures that your project is
+                      constructed correctly on the initial attempt.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <h2 id="panel2-title">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="accordion1-content">
+                    Quality assured output...
+                  </button>
+                </h2>
+                <div class="accordion-content" role="region" aria-labelledby="panel2-title" aria-hidden="true"
+                  id="panel2-content">
+                  <div>
+                    <p>...I ensure quality output through industry best practices and rigorous testing for exceptional,
+                      user-centric results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <h2 id="panel3-title">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="accordion1-content">
+                    Organized and well-structured coding...
+                  </button>
+                </h2>
+                <div class="accordion-content" role="region" aria-labelledby="panel1-title" aria-hidden="true"
+                  class="accordion-content" id="panel3-content">
+                  <div>
+                    <p>...To guarantee that websites are streamlined, swift, adaptable, optimized for SEO, and
+                      compatible with accessibility services and various devices.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <h2 id="panel4-title">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="accordion1-content">
+                    Continued support and maintenance...
+                  </button>
+                </h2>
+                <div class="accordion-content" role="region" aria-labelledby="panel4-title" aria-hidden="true"
+                  class="accordion-content" id="panel4-content">
+                  <div>
+                    <p>...I am committed to maintaining your online presence even beyond project
+                      completion. Whether it's addressing bugs or implementing software updates, ongoing support
+                      ensures that everything will operate seamlessly and effectively.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <h2 id="panel5-title">
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="accordion5-content">
+                    Consectetur adipisicing...
+                  </button>
+                </h2>
+                <div class="accordion-content" role="region" aria-labelledby="panel5-title" aria-hidden="true"
+                  class="accordion-content" id="panel3-content">
+                  <div>
+                    <p>...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, amet!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-header-container">
+            <div id="cards4">
+              <div data-scale="0.8" class="glass-card reveal-3" data-delay="500">
+                <div class="img-glass">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="info">
+                  <h1 class="glass-card-text-1">LET'S</h1>
+                </div>
+              </div>
+
+              <div data-scale="0.8" class="glass-card reveal-4" data-delay="800">
+                <div class="img-glass">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="info">
+                  <h1 class="glass-card-text-2">CREATE</h1>
+                </div>
+              </div>
+              <div data-scale="0.8" class="glass-card reveal-5" data-delay="1200">
+                <div class="img-glass">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div class="info">
+                  <h1 class="glass-card-text-3">SOMETHING</h1>
+                </div>
+              </div>
+              <div data-scale="0.8" class="glass-card reveal-6" data-delay="1600">
+                <div class="img-glass">
+                  <i class="fa-solid fa-pencil"></i>
+                </div>
+                <div class="info">
+                  <h1 class="glass-card-text-4">TOGETHER</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <!----services section end----->
+
+    <section class="process-section sec-padding" id="process">
+      <div class="container">
+        <div class="row">
+          <div class="process-section-title">
+            <h2 data-text="The Process">The Process</h2>
+            <h3>These steps in my project development approach have come from my recent college journey and early
+              freelancing experience. It's a simple roadmap I've designed to make sure I create effective and
+              user-friendly digital solutions. This approach benefits clients because it ensures efficient development,
+              appealing design, and high-quality results.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrapper">
+            <div class="center-line">
+              <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row-time row-1">
+              <article class="first-article">
+                <i class="icon fa-solid fa-arrows-to-circle"></i>
+                <div class="details">
+                  <span class="title-time"> Project Outline as a Blueprint</span>
+                  <span>1/6</span>
+                </div>
+                <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint
+                  eos vero sapiente voluptas debitis dicta dolore.</p>
+
+              </article>
+            </div>
+            <div class="row-time row-2">
+              <article class="second-article">
+                <i class="icon fa-solid fa-pen-fancy"></i>
+                <div class="details">
+                  <span class="title-time">Layout and UI/UX</span>
+                  <span>2/6</span>
+                </div>
+                <p>A primary focus on optimizing layout and enhancing overall user satisfaction. Transforming the
+                  concepts into actual user experience.</p>
+
+              </article>
+            </div>
+            <div class="row-time row-1">
+              <article class="third-article">
+                <i class="icon fas fa-code"></i>
+                <div class="details">
+                  <span class="title-time">Design and Development</span>
+                  <span>3/6</span>
+                </div>
+                <p>With a solid foundation in place, we'll transition into the development phase, focusing on creating
+                  the framework, and functionalities that will breathe life into your project.</p>
+
+              </article>
+            </div>
+            <div class="row-time row-2">
+              <article class="reveal-4">
+                <i class="icon fa-solid fa-list-check"></i>
+                <div class="details">
+                  <span class="title-time">Content Integration and Review</span>
+                  <span>4/6</span>
+                </div>
+                <p>This step ensures that all content, whether it's text, images, or multimedia aligns with the
+                  project's objectives. We'll review it for accuracy and clarity.</p>
+              </article>
+            </div>
+            <div class="row-time row-1">
+              <article class="reveal-3">
+                <i class="icon fa-solid fa-code-branch"></i>
+                <div class="details">
+                  <span class="title-time"> Testing and Refinement</span>
+                  <span>5/6</span>
+                </div>
+                <p>Thorough testing remains crucial. We'll evaluate your project to identify and address any issues or
+                  improvements necessary, guaranteeing a polished final product.</p>
+
+              </article>
+            </div>
+            <div class="row-time row-2">
+              <article class="reveal-4">
+                <i class="icon fa-solid fa-rocket"></i>
+                <div class="details">
+                  <span class="title-time">Deployment and Launch</span>
+                  <span>6/6</span>
+                </div>
+                <p>Upon achieving satisfaction during the testing phase, we'll proceed to the final step.
+                  Your project will go live, marking your
+                  project's transformation from concept to reality.</p>
+
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!----portfolio section start----->
+
+    <section class="portfolio-section sec-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="portfolio-section-title">
+            <h2 data-text="Selected works">Selected works</h2>
+          </div>
+        </div>
+        <div class="services-row">
+
+          <!----portfolio item start----->
+
+          <div class="portfolio-item item reveal--onscroll slide-in-left">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/mockup.png" alt="portfolio item thumb">
+              <div class="portfolio-overlay">
+
+                <button type="button" class="btn view-project-btn">view project <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span></button>
+              </div>
+            </div>
+            <div class="portfolio-item-details">
+              <div class="new-port-image">
+                <img src="img/portfolio/mock-1.png" alt="portfolio item thumb">
+
+              </div>
+              <div class="portfolio-item-title">
+                <div class="pp-title-center">
+                  <a href="https://github.com/mikaellamaesilva/PDC03_PracticalTest"
+                    target="_blank" rel="noopener">
+                    <h3><i class="fa-solid fa-link spin2"></i>IConserve</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                  dolores
+                  error quo dolorum corrupti corporis ut eligendi nulla.
+                  Ex laboriosam nam quia quasi minus nobis dignissimos,
+                  facere eligendi veritatis omnis quos incidunt.
+                  Enim maxime dolores ea.</p>
+              </div>
+              <div class="general-info">
+                <div class="test-container">
+                  <h4>Developed in<br><span>2022</span></h4>
+                  <h4>Developed using <br> <span>C# & Xamarin</span></h4>
+                  <h4>Category <br> <span>Blog</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----portfolio item end----->
+
+          <!----portfolio item2 start----->
+
+          <div class="portfolio-item item reveal--onscroll slide-in-left">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/suburban-ecom.png" alt="portfolio item thumb">
+              <div class="portfolio-overlay">
+
+                <button type="button" class="btn view-project-btn">view project <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span></button>
+
+              </div>
+            </div>
+            <div class="portfolio-item-details">
+              <div class="new-port-image">
+                <img src="img/portfolio/suburban.png" alt="portfolio item thumb">
+                <div class="portfolio-item-title">
+                  <div class="pp-title-center">
+                    <a href="intro.html">
+                <a href="https://github.com/FlexDG/Suburban-Ecomm"
+                    target="_blank" rel="noopener">
+                    <h3><i class="fa-solid fa-link spin2"></i>Suburban Ecommerce</h3>
+                  </a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab, dolores
+                  error quo dolorum corrupti corporis ut eligendi nulla.
+                  Ex laboriosam nam quia quasi minus nobis dignissimos,
+                  facere eligendi veritatis omnis quos incidunt.
+                  Enim maxime dolores ea.</p>
+              </div>
+              <div class="general-info">
+                <div class="test-container">
+                  <h4>Developed in<br><span>2021</span></h4>
+                  <h4>Developed using <br> <span>C#, .NET & Vanilla JS</span></h4>
+                  <h4>Category <br> <span>Ecommerce</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----portfolio item2 end----->
+
+          <!----portfolio item3 start----->
+
+
+          <div class="portfolio-column">
+            <div class="portfolio-item-2">
+
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/tracer.PNG" alt="portfolio item thumb">
+                <div class="portfolio-overlay">
+
+                  <button type="button" class="btn view-project-btn">view project <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span></button>
+
+                </div>
+              </div>
+
+              <div class="portfolio-item-details">
+                <div class="new-port-image">
+                  <img src="img/portfolio/tracer.PNG" alt="portfolio item thumb">
+                </div>
+                <div class="portfolio-item-title">
+                  <div class="pp-title-center">
+                    <a href="https://drive.google.com/drive/folders/1V2PjjH8yx_TThL7gLwu0VHhGUPRx-HWC?usp=sharing"
+                      target="_blank" rel="noopener">
+                      <h3><i class="fa-solid fa-link"></i>Tracer</h3>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                    dolores
+                    error quo dolorum corrupti corporis ut eligendi nulla.
+                    Ex laboriosam nam quia quasi minus nobis dignissimos,
+                    facere eligendi veritatis omnis quos incidunt.
+                    Enim maxime dolores ea.</p>
+                </div>
+                <section class="general-info">
+                  <div class="test-container">
+                    <h4>Made in<br><span>2022</span></h4>
+                    <h4>Made using <br> <span>Adobe XD</span></h4>
+                    <h4>Category <br> <span>Corporate Application</span></h4>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <!----portfolio item3 end----->
+
+            <!----portfolio item4 start----->
+
+            <div class="portfolio-item-2">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/mvp.png" alt="portfolio item thumb">
+                <div class="portfolio-overlay">
+
+                  <button type="button" class="btn view-project-btn">view project <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span></button>
+
+                </div>
+              </div>
+
+              <div class="portfolio-item-details">
+                <div class="new-port-image">
+                  <img src="img/portfolio/mvp.png" alt="portfolio item thumb">
+                  <div class="portfolio-item-title">
+                    <div class="pp-title-center">
+                      <a href="#" target="_blank">
+                        <h3><i class="fa-solid fa-link"></i>Kasina Prototype</h3>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                    dolores
+                    error quo dolorum corrupti corporis ut eligendi nulla.
+                    Ex laboriosam nam quia quasi minus nobis dignissimos,
+                    facere eligendi veritatis omnis quos incidunt.
+                    Enim maxime dolores ea.</p>
+                </div>
+                <div class="general-info">
+                  <div class="test-container">
+                    <h4>Developed in<br><span>2023</span></h4>
+                    <h4>Developed using <br> <span>C# & Vanilla JS</span></h4>
+                    <h4>Category <br> <span>Corporate Application</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----portfolio item4 end----->
+
+          <!----portfolio item5 start----->
+          <div class="portfolio-row reveal-2">
+            <div class="portfolio-item-3">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/ora-mockup.png" alt="portfolio item thumb">
+                <div class="portfolio-overlay">
+
+                  <button type="button" class="btn view-project-btn">view project <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span></button>
+
+                </div>
+
+              </div>
+
+              <div class="portfolio-item-details">
+                <div class="new-port-image">
+                  <img src="img/portfolio/ora-ora-2.png" alt="portfolio item thumb">
+                  <div class="portfolio-item-title">
+                    <div class="pp-title-center">
+                      <a href="#" target="_blank">
+                        <h3><i class="fa-solid fa-link"></i>Ora-Ora</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                    dolores
+                    error quo dolorum corrupti corporis ut eligendi nulla.
+                    Ex laboriosam nam quia quasi minus nobis dignissimos,
+                    facere eligendi veritatis omnis quos incidunt.
+                    Enim maxime dolores ea.</p>
+                </div>
+                <div class="general-info">
+                  <div class="test-container">
+                    <h4>Developed in<br><span>2023</span></h4>
+                    <h4>Developed using <br> <span>HTML, CSS & Vanilla JS</span></h4>
+                    <h4>Category <br> <span>Blog</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----portfolio item5 end----->
+
+            <!----portfolio item6 start----->
+
+            <div class="portfolio-item-3">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/senal-mock.png" alt="portfolio item thumb">
+                <div class="portfolio-overlay">
+
+                  <button type="button" class="btn view-project-btn">view project <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span></button>
+
+                </div>
+              </div>
+
+              <div class="portfolio-item-details">
+                <div class="new-port-image">
+                  <img src="img/portfolio/senal.PNG" alt="portfolio item thumb">
+                  <div class="portfolio-item-title">
+                    <div class="pp-title-center">
+                      <a href="#" target="_blank">
+                        <h3><i class="fa-solid fa-link"></i>SenAl (Sentiment Analysis)</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                    dolores
+                    error quo dolorum corrupti corporis ut eligendi nulla.
+                    Ex laboriosam nam quia quasi minus nobis dignissimos,
+                    facere eligendi veritatis omnis quos incidunt.
+                    Enim maxime dolores ea.</p>
+                </div>
+                <div class="general-info">
+                  <div class="test-container">
+                    <h4>Made in<br><span>2023</span></h4>
+                    <h4>Made using <br> <span>Vanilla JS, jQuery & p5.js</span></h4>
+                    <h4>Category <br> <span>Corporate Application</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item-3">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/portfolio/suburban-mockup.png" alt="portfolio item thumb">
+                <div class="portfolio-overlay">
+
+                  <button type="button" class="btn view-project-btn">view project <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span></button>
+
+                </div>
+              </div>
+
+              <div class="portfolio-item-details">
+                <div class="portfolio-header"></div>
+                <div class="new-port-image">
+                  <img src="img/portfolio/suburban-landing.PNG" alt="portfolio item thumb">
+                  <div class="portfolio-item-title">
+                    <h3>Suburban Portfolio</h3>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore maxime et ab,
+                    dolores
+                    error quo dolorum corrupti corporis ut eligendi nulla.
+                    Ex laboriosam nam quia quasi minus nobis dignissimos,
+                    facere eligendi veritatis omnis quos incidunt.
+                    Enim maxime dolores ea.</p>
+                </div>
+                <div class="general-info">
+                  <div class="general-info">
+                    <div class="test-container">
+                      <h4>Developed in<br><span>2023</span></h4>
+                      <h4>Developed using <br> <span>HTML, CSS & Vanilla JS</span></h4>
+                      <h4>Category <br> <span>Business Portfolio</span></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!----cito mo lagay sa baba netong comment----->
+
+          </div>
+          <!----portfolio item5 end----->
+
+        </div>
+      </div>
+    </section>
+    <!----portfolio section end----->
+
+    <!----contact section start----->
+
+    <section class="contact-section sec-padding" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-section-title">
+            <h2 data-text="Contact Me">Contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form id="form-contact">
+              <div class="row">
+                <div class="input-group">
+
+                  <input type="text" autocomplete="off" placeholder="Name" id="user_name" class="input-control"
+                    required>
+                </div>
+                <div class="input-group">
+                  <input type="email" autocomplete="off" placeholder="Email" id="user_email" class="input-control"
+                    required>
+                </div>
+                <div class="input-group">
+                  <input type="text" autocomplete="off" placeholder="Subject" id="user_subject" class="input-control"
+                    required>
+                </div>
+                <div class="input-group">
+                  <textarea autocomplete="off" placeholder="Message" id="message" class="input-control"
+                    required></textarea>
+
+
+                </div>
+                <button type="submit" class="submit-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  send message</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div id="cards6">
+                <div class="card-credit">
+                  <h3 class="name">let's connect</h3>
+                  <img src="img/chip.png" alt="chip" class="chip">
+                  <img src="img/contactless.png" alt="nfc" class="nfc">
+                  <h3 class="number">
+                    0997 655 5864
+                  </h3>
+
+                  <div class="card-holder">
+                    <h5>follow me</h5>
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/felix.dg.90" target="_blank" rel="noopener"><i
+                          class="fab fa-facebook"></i></a>
+                      <a href="https://twitter.com/Felixiiiiible" target="_blank" rel="noopener"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com/_flexdg/" target="_blank" rel="noopener"><i
+                          class="fab fa-instagram"></i></a>
+                      <a href="linkedin.com/in/felix-de-guzman" target="_blank" rel="noopener"><i
+                          class="fab fa-linkedin"></i></a>
+                      <a href="https://github.com/FlexDG" target="_blank" rel="noopener"><i
+                          class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <img src="img/Flex-Small-Logo.png" alt="logo" class="logo">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <h5>Message Sent Successfully</h5>
+        <button id="close-modal-btn" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Send Another Message</button>
+      </div>
+    </div>
+  </div>
+
+  <!----contact section end----->
+
+
+  <!----main end----->
+
+  <!----portfolio item details popup start----->
+
+  <div class="portfolio-popup">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button type="button" class="btn-border btn pp-close"><i class="fas fa-times"></i></button>
+          <div class="pp-thumbnail">
+            <img src="img/portfolio/3.jpg" alt="pp-thumbnail">
+          </div>
+
+        </div>
+        <div class="pp-body">
+          <div class="pp-title-center">
+            <h3></h3>
+          </div>
+          <p></p>
+          <div class="test-container">
+            <h4></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----portfolio item details popup end----->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/projects-reveal.js"></script>
+  <script src="js/cards.js"></script>
+
+</body>
+
+</html>
