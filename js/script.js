@@ -60,6 +60,15 @@
         });
     })
 
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    // Hide the cursor on mobile devices
+    if (isMobileDevice()) {
+        cursor.style.display = "none";
+    }
+
     /**********Toggle Navbar***********/
 
     const navToggler = document.querySelector(".nav-toggler");

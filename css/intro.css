@@ -411,6 +411,7 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
+  margin-left: -40px;
 }
 
 .container-intro .intro-glass {
@@ -786,7 +787,7 @@ section {
 
 @media  (max-width: 405px) {
   .container-intro .intro-glass {
-    width: 90px;
+    width: 85px;
     height: 50px;
     margin: 0 -15px;
     left: -3.5%;

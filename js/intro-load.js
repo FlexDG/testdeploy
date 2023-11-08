@@ -62,6 +62,15 @@ a.forEach(item => {
   });
 })
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Hide the cursor on mobile devices
+if (isMobileDevice()) {
+  cursor.style.display = "none";
+}
+
 function showCursor() {
   const cursor = document.querySelector('.cursor');
   cursor.style.opacity = 1; 
