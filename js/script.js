@@ -19,46 +19,32 @@
     var cursor = document.querySelector('.cursor');
     var cursorinner = document.querySelector('.cursor2');
     var a = document.querySelectorAll('a, .portfolio-item, .portfolio-item-2, .portfolio-item-3, .nav-toggler, .nav-logo, .tab-item, .accordion-panel, .pp-header, button');
-
+    
     var storedX = localStorage.getItem('cursorX');
     var storedY = localStorage.getItem('cursorY');
-
-
+    
     if (storedX && storedY) {
         cursor.style.transform = `translate3d(calc(${storedX}px - 50%), calc(${storedY}px - 50%), 0)`
     }
-
+    
     document.addEventListener('mousemove', function (e) {
         var x = e.clientX;
         var y = e.clientY;
         cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-    });
-
-    document.addEventListener('mousemove', function (e) {
-        var x = e.clientX;
-        var y = e.clientY;
         cursorinner.style.left = x + 'px';
         cursorinner.style.top = y + 'px';
     });
-
-    function isMobileDevice() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
     
-    if (isMobileDevice()) {
-        cursor.style.display = "none";
-    }
-
     document.addEventListener('mousedown', function () {
         cursor.classList.add('click');
-        cursorinner.classList.add('cursorinnerhover')
+        cursorinner.classList.add('cursorinnerhover');
     });
-
+    
     document.addEventListener('mouseup', function () {
-        cursor.classList.remove('click')
-        cursorinner.classList.remove('cursorinnerhover')
+        cursor.classList.remove('click');
+        cursorinner.classList.remove('cursorinnerhover');
     });
-
+    
     a.forEach(item => {
         item.addEventListener('mouseover', () => {
             cursor.classList.add('hover');
@@ -66,8 +52,18 @@
         item.addEventListener('mouseleave', () => {
             cursor.classList.remove('hover');
         });
-    })
-
+    });
+    
+    // Check if the device is a mobile device
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    if (isMobileDevice()) {
+        cursor.style.display = "none";
+        cursorinner.style.display = "none";
+    }
+    
     /**********Toggle Navbar***********/
 
     const navToggler = document.querySelector(".nav-toggler");

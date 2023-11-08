@@ -84,8 +84,8 @@ body {
 
 .cursor-hidden {
     display: none;
-  }
-  
+}
+
 .cursor {
     width: 50px;
     height: 50px;
@@ -1685,7 +1685,6 @@ span {
     background-color: #1f458c;
     position: relative;
     transition: 200ms;
-
 }
 
 .graphic-softwares .li_wrap p:nth-child(1) {
@@ -3177,8 +3176,9 @@ span {
     .glass-ball {
         display: none;
     }
+
     .home-section,
-    .about-section{
+    .about-section {
         overflow: hidden;
     }
 }
@@ -3310,14 +3310,14 @@ span {
         background-color: rgba(151, 151, 151, 0.119);
         filter: blur(5px);
     }
-    
+
     .circle:nth-child(2) {
         width: 200px;
         height: 200px;
         background-color: rgba(181, 179, 179, 0.168);
         filter: blur(5px);
     }
-    
+
     .circle:nth-child(3) {
         width: 100px;
         height: 100px;
@@ -3327,7 +3327,7 @@ span {
         width: 100px;
         height: 100px;
     }
-    
+
 
     .home-text .btn {
         margin: 0 7px 15px;
@@ -3365,7 +3365,7 @@ span {
 
     .header-sci li {
         margin: 0 20px 0 0;
-      
+
     }
 
     .header-sci li a {
@@ -3466,7 +3466,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
-     
+
     }
 
     .tech-stack-container {
@@ -3496,10 +3496,6 @@ span {
         margin-top: 30px;
         justify-content: center;
         align-items: center;
-    }
-
-    .left {
-        margin-left: -10px;
     }
 
     .about-text {
@@ -3555,7 +3551,7 @@ span {
         width: 93.5dvw;
     }
 
-    
+
     .bottom-row {
         width: 93.5dvw;
     }
@@ -3576,13 +3572,11 @@ span {
         .portfolio-section-title h2,
         .services-section-title h2,
         .process-section-title h2,
-        .section-title h2 
-         {
+        .section-title h2 {
             font-size: 45px;
         }
 
-        .services-section-title-2 h2
-         {
+        .services-section-title-2 h2 {
             font-size: 25px;
         }
     }
@@ -3591,43 +3585,49 @@ span {
         .about-img-box img {
             height: 340px;
         }
+
+        .contact-text {
+            font-size: 3dvw;
+        }
+
         .tech-stack-card .tech-stack-circle::before {
             width: 80px;
             height: 80px;
         }
+
         .tech-stack-card .tech-stack-circle .card-logo {
             position: relative;
             width: 30px;
             height: 30px;
         }
-        
+
         .tech-stack-card .tech-stack-circle .card-logo-csharp {
             width: 35px;
             height: 40px;
         }
-        
+
         .tech-stack-card .tech-stack-circle .card-logo-java {
             width: 65px;
             height: 55px;
         }
-        
+
         .tech-stack-card .tech-stack-circle .card-logo-php {
             width: 40px;
             height: 55px;
         }
-        
+
         .tech-stack-card .tech-stack-circle .card-logo-nodejs {
             width: 45px;
             height: 50px;
         }
-           
+
         .tech-stack-card .hover-content h3 {
             color: #fff;
             font-size: 10px;
             width: 130px;
             margin-bottom: 30px;
         }
-        
+
         .tech-stack-card .hover-logo {
             position: absolute;
             top: 50%;
@@ -3636,8 +3636,8 @@ span {
             height: 45px;
             transition: 0.5s ease-in-out;
         }
-        
-        
+
+
         .tech-stack-card .hover-content h3 {
             color: #fff;
             font-size: 10px;
@@ -3650,19 +3650,21 @@ span {
             width: 100px;
             height: 100px;
             border-radius: 20px;
-            background: var(--clr);                                                                                                                                        
+            background: var(--clr);
         }
+
         .accordion-wrapper h1 {
             font-size: 18px;
         }
-    
+
         .accordion-panel {
             padding: 0.9rem;
         }
-    
+
         .accordion h2 {
-          font-size: 2.5vw;
+            font-size: 2.5vw;
         }
+
         .accordion-trigger::before,
         .accordion-trigger::after {
             margin-top: 5px;
@@ -3670,7 +3672,7 @@ span {
             height: 1px;
             margin-right: -10px;
         }
-    
+
         .accordion-content {
             font-size: 10px;
         }
@@ -3681,10 +3683,12 @@ span {
         .home-text-container {
             top: 100px;
         }
+
         .about-img-box img {
             height: 340px;
         }
-        .logo{
+
+        .logo {
             display: none;
         }
 
@@ -3707,28 +3711,31 @@ span {
 
     }
 
-    
+
     @media(max-width:450px) {
-         .tech-stack-container{
+        .tech-stack-container {
             margin-left: 1px;
-         }
-         .services-section-title-2 h2{
+        }
+
+        .services-section-title-2 h2 {
             font-size: 18px;
-         }
-        
-          .logo{
+        }
+
+        .logo {
             height: auto;
             width: 10%;
-          }
-          
+        }
+
     }
 
     @media(max-width:396px) {
         .about-img-box img {
             height: 280px;
         }
+    }
 
-        .tech-stack-container{
+    @media(max-width:406px) {
+        .tech-stack-container {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -3736,9 +3743,6 @@ span {
             align-items: center;
             width: 150%;
         }
-
-  
-     
     }
 
     @media(max-width:359px) {
@@ -3759,10 +3763,6 @@ span {
         .header-sci li {
             margin: 0 20px 50px 0;
         }
-        
-        .contact-text {
-            font-size: 12px;
-        }
 
     }
 
@@ -3775,6 +3775,31 @@ span {
             height: 100px;
             width: 100px;
         }
+
+        .about-description,
+        .timeline-item {
+            font-size: 3.5dvw;
+        }
+
+        .about-text .timeline-item h4 {
+            font-size: 4dvw;
+        }
+
+        .about-tabs .tab-item,
+        .about-text h3 {
+            font-size: 4.5dvw;
+        }
+
+        .graphic-softwares .li_wrap p {
+            width: 2.2em;
+            height: 2.2em;
+            font-size: 5dvw;
+        }
+
+        .contact .li_wrap .icon i {
+            font-size: 5dvw;
+        }
+
 
         .contact-form .input-control::placeholder {
             color: #cfcfcfbc;
@@ -3845,14 +3870,16 @@ span {
         .services-card {
             width: 90%;
         }
-        
-        .card-content h2{
+
+        .card-content h2 {
             font-size: 8vw;
         }
-        .card-content h4{
+
+        .card-content h4 {
             font-size: 4vw;
         }
-        .card-content p{
+
+        .card-content p {
             font-size: 3vw;
         }
 
@@ -3872,7 +3899,7 @@ span {
         .accordion-wrapper {
             margin-top: 90px;
         }
-     
+
 
         .glass-card {
             width: 80%;

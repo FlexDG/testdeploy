@@ -65,7 +65,6 @@ a.forEach(item => {
     });
 });
 
-// Check if the device is a mobile device
 
 function showCursor() {
   const cursor = document.querySelector('.cursor');
