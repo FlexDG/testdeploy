@@ -36,6 +36,16 @@ function updateCursorPos(e) {
 
 document.addEventListener('mousemove', updateCursorPos);
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobileDevice()) {
+  cursor.style.display = "none";
+  cursorinner.style.display = "none";
+}
+
+
 document.addEventListener('mousedown', function () {
     cursor.classList.add('click');
     cursorinner.classList.add('cursorinnerhover');
@@ -56,14 +66,6 @@ a.forEach(item => {
 });
 
 // Check if the device is a mobile device
-function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-if (isMobileDevice()) {
-    cursor.style.display = "none";
-    cursorinner.style.display = "none";
-}
 
 function showCursor() {
   const cursor = document.querySelector('.cursor');
