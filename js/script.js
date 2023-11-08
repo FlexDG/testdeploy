@@ -41,6 +41,14 @@
         cursorinner.style.top = y + 'px';
     });
 
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    if (isMobileDevice()) {
+        cursor.style.display = "none";
+    }
+
     document.addEventListener('mousedown', function () {
         cursor.classList.add('click');
         cursorinner.classList.add('cursorinnerhover')
@@ -59,15 +67,6 @@
             cursor.classList.remove('hover');
         });
     })
-
-    function isMobileDevice() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-    
-    // Hide the cursor on mobile devices
-    if (isMobileDevice()) {
-        cursor.style.display = "none";
-    }
 
     /**********Toggle Navbar***********/
 
