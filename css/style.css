@@ -1948,7 +1948,6 @@ span {
 .services-row {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .reveal--slide-in-left {
@@ -2667,11 +2666,6 @@ span {
     margin: 0 15px 30px;
 }
 
-.portfolio-item.active {
-    width: calc((100% / 3) - 30px);
-    margin: 0 15px 30px;
-}
-
 .portfolio-column {
     display: flex;
     flex-direction: column;
@@ -2819,23 +2813,48 @@ span {
     border-radius: 10px;
 }
 
-
 .pp-title-center {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+
+.pp-title-center h6 {
+    font-size: 14px;
+    margin: 25px 0 10px;
+    font-style: italic;
+    color: var(--nav-blue);
+    opacity: 0.8;
 }
 
 .pp-title-center h3 {
     font-size: 30px;
     text-transform: capitalize;
-    margin: 20px 0 15px;
+    margin: 20px 0 -18px;
     text-align: center;
     font-weight: 700;
     justify-content: center;
     align-items: center;
     display: flex;
-    transition: 0.5s;
+    position: relative;
+}
+
+.pp-title-center h3::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffffae;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease; 
+}
+
+.pp-title-center h3:hover::before {
+    width: 101%;  
 }
 
 .pp-body i {
@@ -2949,15 +2968,20 @@ span {
     box-shadow: 0 -1px 45px rgba(0, 0, 0, 0.546);
     filter: brightness(1.2);
     height: 250px;
-    width: 400px;
+    width: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content h5 {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
+    width: 90%;
 }
 
 #close-modal-btn {
@@ -3189,6 +3213,42 @@ span {
         font-size: 12px;
     }
 
+    .row-time article p,
+    .details span {
+        font-size: 3.3dvw;
+    }
+    .process-section-title h3{
+        line-height: 1.8em;
+        font-size: 3.5dvw;
+    }
+
+    .modal-content h5 {
+        font-size: 3dvw;
+    }
+
+    .row-time article .details .title-time,
+    .pp-title-center h3 {
+        font-size: 4dvw;
+    }
+
+    .pp-body p {
+        font-size: 2.3dvw;
+    }
+
+    .pp-body .test-container {
+        gap: 50px;
+    }
+
+    .pp-body h4 {
+        font-size: 2.1dvw;
+    }
+
+    .pp-title-center h6,
+    .pp-body i,
+    .pp-body span {
+        font-size: 2.5dvw;
+    }
+
     .bg-pictures .lappy {
         left: 1%;
         animation: bounceTop 30s ease-in-out infinite;
@@ -3219,6 +3279,23 @@ span {
     .home-text span,
     .home-text h1 {
         font-size: 3.5vw;
+    }
+    .portfolio-item-2 {
+        width: 98%;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .portfolio-item-2 {
+        width: 96%;
+    }
+}
+
+@media(max-width:1100px) {
+
+    .portfolio-item-2 {
+        width: 94%;
     }
 }
 
@@ -3365,7 +3442,11 @@ span {
 
     .header-sci li {
         margin: 0 20px 0 0;
-
+    }
+    .card-holder .social-links a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 
     .header-sci li a {
@@ -3858,13 +3939,10 @@ span {
             font-size: 12px;
         }
 
-        .btn {
+        .btn,
+        .submit-btn {
             padding: 10px 10px 10px 10px;
             font-size: 12px;
-        }
-
-        .btn a {
-            font-size: 2px;
         }
 
         .services-card {
@@ -3891,8 +3969,7 @@ span {
             font-size: 27px;
         }
 
-        .services-section-title h3,
-        .process-section-title h3 {
+        .services-section-title h3{
             font-size: 16px;
         }
 
@@ -3936,7 +4013,6 @@ span {
         .box-header-container {
             width: 100%;
         }
-
     }
 
     @media(max-width: 790px) {

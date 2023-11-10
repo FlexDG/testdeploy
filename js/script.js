@@ -18,7 +18,7 @@
 
     var cursor = document.querySelector('.cursor');
     var cursorinner = document.querySelector('.cursor2');
-    var a = document.querySelectorAll('a, .portfolio-item, .portfolio-item-2, .portfolio-item-3, .nav-toggler, .nav-logo, .tab-item, .accordion-panel, .pp-header, button');
+    var a = document.querySelectorAll('a, .portfolio-item, .portfolio-item-2, .portfolio-item-3, .nav-toggler, .nav-logo, .tab-item, .accordion-panel, button');
     
     var storedX = localStorage.getItem('cursorX');
     var storedY = localStorage.getItem('cursorY');
@@ -53,8 +53,7 @@
             cursor.classList.remove('hover');
         });
     });
-    
-    // Check if the device is a mobile device
+
     function isMobileDevice() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
